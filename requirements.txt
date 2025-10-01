@@ -1,0 +1,4 @@
+# The automated tests run against a self-contained version of FitResume that
+# does not rely on third-party packages.  Install pytest locally if you want to
+# execute the test suite outside of the harness.
+pytest>=8.0
