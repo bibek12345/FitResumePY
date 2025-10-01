@@ -1,0 +1,17 @@
+fastapi
+uvicorn[standard]
+nicegui
+sqlalchemy
+psycopg2-binary
+alembic
+apscheduler
+openai
+python-docx
+docxtpl
+pypdf
+structlog
+python-multipart
+jinja2
+pydantic
+pytest
+httpx
