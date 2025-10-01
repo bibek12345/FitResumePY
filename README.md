@@ -1,3 +1,4 @@
+ codex/build-fitresume-project-with-full-features-nhskwq
 # FitResume
 
 FitResume is a local-first resume tailoring workstation that keeps the project structure and behaviour outlined in the original brief while remaining fully executable inside an offline test harness.  The repository ships with lightweight, in-repo stand-ins for FastAPI, NiceGUI, SQLAlchemy, structlog, and other third-party dependencies so the end-to-end flow (resume upload → job creation → tailored DOCX artifact) can be exercised without network access or external wheels.  The public API and module layout mirror the intended production stack, which makes it straightforward to swap the stubs for the real libraries in a fully provisioned environment.
@@ -108,3 +109,11 @@ pytest
 - Generated artifacts and uploads remain on disk to support the UI download experience.
 - The DOCX template is generated on demand at runtime, so no binary files need to be tracked in version control.
 - The scheduler facade executes jobs immediately when triggered; replace it with APScheduler for production cron support.
+=======
+# FitResumePY
+
+This project now generates its DOCX resume template at runtime. The
+`ArtifactService` will automatically create `templates/resume_template.docx`
+whenever it is missing, so no binary templates need to be stored in version
+control.
+
