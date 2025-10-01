@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+.venv/
+.DS_Store
+artifacts/*
+!artifacts/.gitkeep
+uploads/*
+!uploads/.gitkeep
+templates/resume_template.docx
